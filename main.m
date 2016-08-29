@@ -85,7 +85,7 @@ rightKey = KbName('RightArrow');
 %----------------------------------------------------------------------
 
 % Get the image files for the experiment
-imageFolder = [cd '/Images/Dash_Wedge/'];
+imageFolder = [cd '/Images/Dash_Wedge/'];    % Change folder name if you want "Ball_Stick"
 imgList = dir(fullfile(imageFolder, '*.png'));
 imgList = {imgList(:).name};
 numImages = length(imgList);
@@ -113,7 +113,7 @@ score = zeros(numTrials,1);
 %----------------------------------------------------------------------
 
 % Animation loop: we loop for the total number of trials
-for trial = 58:numTrials
+for trial = 1:numTrials
 
     % Cue to determine whether a response has been made
     respToBeMade = false;
